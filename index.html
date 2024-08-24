@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Bolsas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Bolsas</h1>
+        <form id="calculator-form">
+            <label for="ancho">Ancho (cm):</label>
+            <input type="number" id="ancho" min="50" max="140" required>
+
+            <label for="largo">Largo (cm):</label>
+            <input type="number" id="largo" min="50" max="160" required>
+
+            <label for="espesor">Espesor (micrones):</label>
+            <input type="number" id="espesor" step="0.001" min="0.015" max="0.100" required>
+
+            <label for="cantidad">Cantidad (unidades):</label>
+            <input type="number" id="cantidad" required>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <h2>Resultados:</h2>
+        <p id="resultados"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
